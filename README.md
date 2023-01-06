@@ -6,7 +6,7 @@ This is a solution to the [Interactive pricing component challenge on Frontend M
 
 ![](/design/desktop-preview.jpg)
 
-Link: https://fastidious-blini-0f8460.netlify.app/
+Link: https://spontaneous-choux-48a70a.netlify.app/
 
 ### Built with:
 
