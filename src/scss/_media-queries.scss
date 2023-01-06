@@ -1,0 +1,83 @@
+body {
+  background-size: 100vw 50vh;
+}
+.hero {
+  margin-top: 5.4rem;
+  margin-bottom: 2.6rem;
+  background-position: 12.4rem 1.4rem;
+
+  &__title {
+    font-size: 2.8rem;
+  }
+
+  &__text {
+    max-width: max-content;
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+    margin-left: 1.2rem;
+  }
+}
+
+.main-container {
+  padding-bottom: 0;
+}
+
+.pricing-wrapper {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.7rem 3.5rem 1rem 3.7rem;
+
+  &__pageviews {
+    width: 50%;
+    order: 1;
+    font-size: 1.36rem;
+    margin-top: 0.3rem;
+  }
+  &__price-amount {
+    order: 2;
+    font-size: 3.9rem;
+  }
+
+  &__month {
+    font-size: 1.55rem;
+  }
+
+  &__range-input {
+    order: 3;
+    width: 99%;
+    margin-bottom: 4.8rem;
+  }
+}
+
+.monthly-billing-wrapper {
+  margin-right: 5.7rem;
+
+  &__discount {
+    margin-left: 0.2rem;
+    &-text {
+      display: inline;
+    }
+  }
+
+  &__input {
+    margin-left: 1.8rem;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.6rem 3.5rem 2.1rem 3.7rem;
+
+  &__list-item {
+    text-align: start;
+  }
+
+  &__btn {
+    margin: 0;
+    margin-bottom: 0.7rem;
+    margin-right: 0.2rem;
+  }
+}

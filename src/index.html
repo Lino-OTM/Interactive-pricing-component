@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./scss/styles.scss" />
+    <link
+      rel="stylesheet"
+      href="./scss/_media-queries.scss"
+      media="(min-width: 600px)"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <h1 class="hero__title">Simple, traffic-based pricing</h1>
+      <p class="hero__text">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+    </header>
+
+    <main class="main-container">
+      <div class="pricing-wrapper">
+        <p class="pricing-wrapper__pageviews">
+          <span class="pricing-wrapper__pageviews-amount">100K</span> Pageviews
+        </p>
+
+        <input
+          class="pricing-wrapper__range-input"
+          type="range"
+          min="0"
+          max="4"
+          step="1"
+          aria-label="range slider to select the price"
+        />
+
+        <output class="pricing-wrapper__price-amount"
+          >$ <span class="pricing-wrapper__price">16</span>.00
+          <span class="pricing-wrapper__month">/ month</span>
+        </output>
+      </div>
+
+      <div class="monthly-billing-wrapper">
+        <p class="monthly-billing-wrapper__text">Monthly Billing</p>
+        <input
+          class="monthly-billing-wrapper__input"
+          type="checkbox"
+          aria-label="button to apply 25% discount for yearly billing"
+        />
+        <p class="monthly-billing-wrapper__yearly-billing">
+          Yearly Billing
+          <span class="monthly-billing-wrapper__discount"
+            >-25%
+            <span class="monthly-billing-wrapper__discount-text"
+              >discount</span
+            ></span
+          >
+        </p>
+      </div>
+
+      <hr class="main-container__separation-line" />
+
+      <footer class="footer">
+        <ul class="footer__items-list">
+          <li class="footer__list-item">Unlimited websites</li>
+          <li class="footer__list-item">100% data ownership</li>
+          <li class="footer__list-item">Email reports</li>
+        </ul>
+        <button class="footer__btn">Start my trial</button>
+      </footer>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ivan</a>.
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
